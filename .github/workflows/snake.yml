@@ -1,19 +1,13 @@
 name: GitHub Snake Game
 
 on:
-  # Agenda a execução diária à meia-noite UTC
   schedule:
     - cron: "0 0 * * *"
-
-  # Permite execução manual
   workflow_dispatch:
-
-  # Executa o workflow quando houver push na branch main
   push:
     branches:
       - main
 
-# 🔥 Garante permissões de escrita para evitar erros de push
 permissions:
   contents: write
 
@@ -23,11 +17,9 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      # Step 1: Checkout do repositório
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Gerar animação do Snake Game
       - name: Generate GitHub Contributions Snake Animations
         uses: Platane/snk@v3
         with:
@@ -39,11 +31,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 3: Deploy para a branch "output" usando GH_PAT
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          token: ${{ secrets.GH_PAT }}  # Usa o Personal Access Token para autenticação
+          personal_token: ${{ secrets.GH_PAT }}  # ⚠️ Substituído "token" por "personal_token"
           publish_dir: ./dist
-          publish_branch: output  # Pode ser alterado para 'gh-pages' se preferir
+          publish_branch: output
           commit_message: "Update snake animation [skip ci]"

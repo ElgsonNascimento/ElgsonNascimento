@@ -27,3 +27,7 @@
 
 ---
 [![](https://visitcount.itsvg.in/api?id=ElgsonNascimento&icon=0&color=0)](https://visitcount.itsvg.in)
+
+![snake gif](https://github.com/ElgsonNascimento/ElgsonNascimento/blob/output/github-snake-dark.svg)
+
+

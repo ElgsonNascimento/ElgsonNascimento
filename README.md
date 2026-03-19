@@ -1,6 +1,6 @@
 # 💫 Sobre mim:
 🚀 Apaixonado por tecnologia, segurança da informação e desenvolvimento web.<br>  
-🎓 Atualmente cursando Cibersegurança na PUCPR (2º período).<br>  
+🎓 Atualmente cursando Cibersegurança na PUCPR (5º período).<br>  
 💡 Sempre buscando aprender e aprimorar conhecimentos em segurança cibernética e desenvolvimento full-stack.<br>  
 🔧 Experiência com Python, PHP, JavaScript, C, C#, Django, Bootstrap e Banco de dados.<br>  
 📊 Habilidades em análise de dados com Excel e Power BI, além de automação com ESP32.<br>  
